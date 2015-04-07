@@ -2,13 +2,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="tchat.css">
         <title></title>
     </head>
     <body>
-        <form method="post" action="tchat_message.php">
-            <input type="text" name="pseudo" placeholder="Votre pseudo"/>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Envoyer" name="envoyer"/>
-        </form>
+        <div id="container">
+            <form method="post" action="tchat_message.php">
+                <input id="pseudo" type="text" name="pseudo" placeholder="Votre pseudo"/>
+                <div id="affichage"></div>
+                <textarea name="message"></textarea>
+                <input id="bouton" type="submit" value="Envoyer" name="envoyer"/>
+            </form>
+        </div>
     </body>
 </html>
