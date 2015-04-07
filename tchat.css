@@ -16,6 +16,7 @@ textarea
     margin-left: 20%;
     float:left;
     margin-top: 1%;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #pseudo
@@ -41,4 +42,5 @@ textarea
     width:60%;
     height: 600px;
     border: 1px solid black; 
+    border-radius: 10px 10px 0px 0px;
 }
