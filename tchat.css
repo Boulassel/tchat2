@@ -43,4 +43,22 @@ textarea
     height: 600px;
     border: 1px solid black; 
     border-radius: 10px 10px 0px 0px;
+    overflow: scroll;
+}
+
+.poste{
+    width: 700px;
+    height: 200px;
+    background: bisque;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 5px;
+}
+.pseudo{
+    
+}
+.message{
+    width: 600px;
+    padding: 15px;
+    
 }
