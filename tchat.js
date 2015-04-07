@@ -1,1 +1,2 @@
-alert(r);
+console.log(eval(r));
+
