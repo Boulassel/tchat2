@@ -1,5 +1,5 @@
 <?php
-session_start_once();
+session_start();
 include './includes/config.php';
 include './includes/function.php';
 

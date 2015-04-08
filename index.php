@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="container">
-            <form method="post" action="tchat_message.php">
+            <form method="post" action="ajouter_message.php">
                 <input id="pseudo" type="text" name="user" placeholder="Votre pseudo" <?php if (isset($_SESSION['pseudo'])) {
                     echo "value=".$_SESSION['pseudo']."";
 

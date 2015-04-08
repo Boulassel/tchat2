@@ -49,7 +49,7 @@ function ajouter_message(e){
     });
 }
 
-$("#form_ajout_message").submit(ajouter_message);
+//$("#form_ajout_message").submit(ajouter_message);
 
 function scrollaff()
 {   
