@@ -39,6 +39,8 @@ if (isset($_SESSION['bigId'])) {
         echo '</div>';
     }
 
+    $_SESSION['pseudo'] = $value['user'];
+
     
 }
 
@@ -49,7 +51,6 @@ if (isset($_SESSION['bigId'])) {
         'message' => $_REQUEST['message'],
     ));
 
-    $_SESSION['pseudo'] = $value['user'];
 
     header('Location: index.php');
     
