@@ -10,6 +10,7 @@ function afficher_message() {
         
         success: function (r) {
             $("#affichage").html(r);
+
         }
 //        ,
 //        dataType : 'json' // Le type de données à recevoir, ici, du HTML.
@@ -26,4 +27,5 @@ function afficher_message() {
 //console.log(afficher_message);
 $("#affichage").html(afficher_message);
 //$("#affichage").append(afficher_new_msg);
+
 
