@@ -14,3 +14,26 @@ function scrollaff()
 
 scrollaff();
 
+
+
+
+
+
+//php
+// Ajout d'un nouveau message
+ if (array_key_exists('envoyer', $_REQUEST)) {
+    if($_REQUEST['user'] != "" && $_REQUEST['message'] =! "")
+    {
+        newPDO()->prepare('INSERT INTO messages (user,message) VALUES (:user,:message)')->execute(array(
+            'user' => $_REQUEST['user'],
+            'message' => $_REQUEST['message'],
+        ));
+        $_SESSION['pseudo'] = $value['user'];
+
+        header('Location: index.php');
+    }
+    else
+    {
+        echo "Pseudo ou message vide";        
+    }
+}
