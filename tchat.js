@@ -12,5 +12,5 @@ function scrollaff()
 // }, 500);
 }
 
-scrollaff();
+//scrollaff();
 

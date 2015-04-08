@@ -7,11 +7,6 @@ if (isset($_SESSION['bigId'])) {
 
 
     $pdoGetUser = newPDO()->prepare('SELECT * FROM messages WHERE id > :id');
-
-    $oPDO = newPDO();
-    $req = "SELECT * FROM messages"; //WHERE id > :id
-    $pdoGetUser = $oPDO->prepare($req);
-
     
     $pdoGetUser->execute(array('id' => $_SESSION['bigId']));
     $resGetUser = $pdoGetUser->fetchAll(PDO::FETCH_ASSOC);
