@@ -12,8 +12,8 @@ function newPDO() {
     return $oPDO;
 }
 
-function session_start_once(){
-    if (!session_start()) {
-        session_start();
-    }
-}
+// function session_start_once(){
+//     if (!session_start()) {
+//         session_start();
+//     }
+//}

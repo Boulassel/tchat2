@@ -1,10 +1,9 @@
 <?php
 include './includes/config.php';
 include './includes/function.php';
-session_start_once();
+session_start();
 
 //var_dump($_SESSION);
-
 if (isset($_SESSION['bigId'])) {
 
     $oPDO = newPDO();
@@ -39,6 +38,7 @@ if (isset($_SESSION['bigId'])) {
         echo '<p class="message">' . $value['message'] . '</p>';
         echo '</div>';
     }
+
     
 }
 
@@ -48,8 +48,10 @@ if (isset($_SESSION['bigId'])) {
         'user' => $_REQUEST['user'],
         'message' => $_REQUEST['message'],
     ));
-    //Possibilité de garder le pseudo en SESSION
+
     $_SESSION['pseudo'] = $value['user'];
+
     header('Location: index.php');
+    
 }
 

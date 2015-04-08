@@ -12,7 +12,13 @@
     <body>
         <div id="container">
             <form method="post" action="tchat_message.php">
-                <input id="pseudo" type="text" name="user" placeholder="Votre pseudo" <?php echo "value=".$_SESSION['pseudo']."" ?> />
+                <input id="pseudo" type="text" name="user" placeholder="Votre pseudo" <?php if (isset($_SESSION['pseudo'])) {
+                    echo "value=".$_SESSION['pseudo']."";
+
+                } else {
+                    echo "value=''";
+
+                    }  ?> />
                 <div id="affichage"></div>
                 <textarea name="message"></textarea>
                 <input id="bouton" type="submit" value="Envoyer" name="envoyer"/>
