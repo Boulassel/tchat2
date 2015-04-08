@@ -1,6 +1,6 @@
 body
 {
-    background:grey;
+    background:#2FEB5E;
 }
 
 #container
@@ -29,11 +29,15 @@ textarea
 
 #bouton 
 {
-    width: 10%;
-    height:10%;
+    width: 40px;
+    height:40px;
+    border-radius: 60px;
     float:left;
     margin-top:1%;
     margin-left: 1%;
+    background: orange;
+    border: 1px solid black;
+    font-weight: bold;
 }
 
 #affichage
@@ -49,16 +53,19 @@ textarea
 .poste{
     width: 700px;
     height: 100px;
-    background: bisque;
+    background: #2FEB5E;
     margin: 0 auto;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
 .pseudo{
-    
+    float: left;
 }
 .message{
     width: 600px;
     padding: 15px;
+    margin-top: 30px;
+
     
 }

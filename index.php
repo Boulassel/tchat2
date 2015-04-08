@@ -21,7 +21,7 @@
                     }  ?> />
                 <div id="affichage"></div>
                 <textarea name="message"></textarea>
-                <input id="bouton" type="submit" value="Envoyer" name="envoyer"/>
+                <input id="bouton" type="submit" value="GO" name="envoyer"/>
             </form>
         </div>
         <script type="text/javascript" src="tchat.js"></script>
