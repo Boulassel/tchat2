@@ -8,7 +8,7 @@ session_start_once();
 if (isset($_SESSION['bigId'])) {
 
     $oPDO = newPDO();
-    $req = "SELECT * FROM messages WHERE id > :id";
+    $req = "SELECT * FROM messages"; //WHERE id > :id
     $pdoGetUser = $oPDO->prepare($req);
     
     $pdoGetUser->execute(array('id' => $_SESSION['bigId']));
