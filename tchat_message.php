@@ -44,15 +44,3 @@ if (isset($_SESSION['bigId'])) {
 }
 
 
-// Ajout d'un nouveau message
- if (array_key_exists('envoyer', $_REQUEST)) {
-    newPDO()->prepare('INSERT INTO messages (user,message) VALUES (:user,:message)')->execute(array(
-        'user' => $_REQUEST['user'],
-        'message' => $_REQUEST['message'],
-    ));
-
-
-    header('Location: index.php');
-    
-}
-

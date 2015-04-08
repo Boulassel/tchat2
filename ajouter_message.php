@@ -9,6 +9,6 @@ if (isset($_POST['envoyer'])) {
         'user' => $_REQUEST['user'],
         'message' => $_REQUEST['message'],
     ));
-    header('Location: index.html');
+    header('Location: index.php');
 }
 
