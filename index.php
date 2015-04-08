@@ -1,5 +1,4 @@
-<?php session_start()
-?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +11,18 @@
     <body>
         <div id="container">
             <form method="post" action="tchat_message.php">
-                <input id="pseudo" type="text" name="user" placeholder="Votre pseudo" <?php echo "value=".$_SESSION['pseudo']."" ?> />
+                <input id="pseudo" type="text" name="user" placeholder="Votre pseudo"
+                <?php 
+                if(!isset($_SESSION['pseudo']))
+                {
+                    echo "value=''";
+                }
+                else
+                {
+                    echo "value=".$_SESSION['user']."" ;
+                   
+                }
+                ?>/>
                 <div id="affichage"></div>
                 <textarea name="message"></textarea>
                 <input id="bouton" type="submit" value="Envoyer" name="envoyer"/>

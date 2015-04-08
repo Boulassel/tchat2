@@ -1,7 +1,7 @@
 <?php
 include './includes/config.php';
 include './includes/function.php';
-session_start_once();
+
 
 //var_dump($_SESSION);
 
