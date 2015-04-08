@@ -60,6 +60,7 @@ textarea
     border: 1px solid white; 
     margin-top: 25px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .pseudo{
     float: left;
