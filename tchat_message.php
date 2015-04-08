@@ -39,6 +39,7 @@ if (isset($_SESSION['bigId'])) {
         echo '<p class="message">' . $value['message'] . '</p>';
         echo '</div>';
     }
+    
 }
 
 // Ajout d'un nouveau message
@@ -47,5 +48,8 @@ if (isset($_SESSION['bigId'])) {
         'user' => $_REQUEST['user'],
         'message' => $_REQUEST['message'],
     ));
-    header('Location: index.html');
+    //Possibilité de garder le pseudo en SESSION
+    $_SESSION['pseudo'] = $value['user'];
+    header('Location: index.php');
 }
+
