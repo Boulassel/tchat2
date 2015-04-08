@@ -32,3 +32,11 @@ function ajouter_message(e){
 
 $("#form_ajout_message").submit(ajouter_message);
 
+function scrollaff()
+{   
+    $(document).ready(function()
+    {
+        $('#affichage').animate({ scrollTop: 999999999}, 500);
+    });
+}
+scrollaff();
