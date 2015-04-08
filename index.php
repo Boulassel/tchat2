@@ -1,4 +1,7 @@
-<?php session_start()
+<?php session_start();
+ //if (isset($_SESSION['bigId'])) {
+    //$_SESSION['bigId']= 0;
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +23,7 @@
 
                     }  ?> />
                 <div id="affichage"></div>
-                <textarea name="message"></textarea>
+                <textarea id="message" name="message"></textarea>
                 <input id="bouton" type="submit" value="GO" name="envoyer"/>
             </form>
         </div>
