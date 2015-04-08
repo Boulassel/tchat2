@@ -13,7 +13,7 @@ function newPDO() {
 }
 
 function session_start_once(){
-    if (!session_start()) {
+    if (!isset($_SESSION)) {
         session_start();
     }
 }
