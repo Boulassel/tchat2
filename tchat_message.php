@@ -1,6 +1,8 @@
 <?php
 include './includes/config.php';
 include './includes/function.php';
+include './includes/cryptage.php';
+
 session_start();
 //var_dump($_GET);
 
@@ -13,10 +15,11 @@ if(isset($_GET['id_message'])){
     
     foreach ($resGetUser as $key => $value) {
         //$_SESSION['bigId'] = $value['id'];
+        $message = cryptage($value['message']);
         echo '<div class="poste">';
         echo '<p data-id="'.$value['id'].'" class="cacher_id">Id message' . $value['id'] . '</p>';
         echo '<p class="pseudo">Pseudo : ' . $value['user'] . '</p>';
-        echo '<p class="message">' . $value['message'] . '</p>';
+        echo '<p class="message">' . $message . '</p>';
         echo '</div>';
     }
 }
@@ -33,10 +36,6 @@ if(isset($_GET['id_message'])){
 //        echo '<p class="message">' . $value['message'] . '</p>';
 //        echo '</div>';
    
-
-    
-
-    
 
 
 
