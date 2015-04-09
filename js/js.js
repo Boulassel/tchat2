@@ -60,6 +60,17 @@ function scrollaff()
 }
 scrollaff();
 
+//code pour choisir la couleur de ses messages
 $( ".couleur" ).click(function() {
   $(".poste1").css( "background-color", $(this).attr("id") );
+});
+
+//code permettant d'actioner 
+//le bouton envoyer en appuyant sur entree
+$(document).on("keypress", "#message", function(e){
+    if (e.which == 13) {
+        //annuler le comportement par default
+        e.preventDefault();
+        $("#bouton").trigger("click");
+    }
 });
