@@ -1,4 +1,7 @@
-<?php session_start()
+<?php session_start();
+ //if (isset($_SESSION['bigId'])) {
+    //$_SESSION['bigId']= 0;
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,7 +14,7 @@
     </head>
     <body>
         <div id="container">
-            <form method="post" action="tchat_message.php">
+            <form method="post" action="ajouter_message.php">
                 <input id="pseudo" type="text" name="user" placeholder="Votre pseudo" <?php if (isset($_SESSION['pseudo'])) {
                     echo "value=".$_SESSION['pseudo']."";
 
@@ -20,7 +23,7 @@
 
                     }  ?> />
                 <div id="affichage"></div>
-                <textarea name="message"></textarea>
+                <textarea id="message" name="message"></textarea>
                 <input id="bouton" type="submit" value="GO" name="envoyer"/>
             </form>
         </div>
