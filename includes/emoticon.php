@@ -3,10 +3,13 @@
 function emoT($msg)//emoticons
 {    
     $tab_emo = [
-        ":D", "><","><'",":$",">>",
-        "o.o","O.O",":(","<3)","<D","^b^",
-        ":'",":'(","(k)","-_-z",">u<",":*",
-        "oo'","<$","T-T",";)",":x",
+        ":D", "><","><'",
+        ":$",">>","o.o",
+        "O.O",":(","<3)",
+        "<D","^b^",":'",":'(",
+        "(k)","-_-z",">u<",
+        ":*","oo'","<$",
+        "T-T",";)",":x",
     ];
     $chemin = "image/";
           
@@ -16,7 +19,7 @@ function emoT($msg)//emoticons
          "Simley-8.ico","Simley-9.ico","Simley-10.ico",
          "Simley-11.ico","Simley-12.ico","Simley-13.ico",
          "Simley-14.ico","Simley-16.ico","Simley-17.ico",
-         "Simley-18.ico","Simley-19.ico","Simley-20.ico",
+         "Simley-19.ico","Simley-20.ico",
          "Simley-21.ico","Simley-23.ico","Simley-24.ico",
          "Simley-25.ico","Simley-26.ico",
          ];
