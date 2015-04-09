@@ -14,12 +14,15 @@ if(isset($_GET['id_message'])){
     $resGetUser = $pdoGetUser->fetchAll(PDO::FETCH_ASSOC);
     
     foreach ($resGetUser as $key => $value) {
+            $message = cryptage($value['message']);
             if ($value['user'] == $_SESSION['pseudo']) {
             //$_SESSION['bigId'] = $value['id'];
+            
+            
             echo '<div id="madiv" class="poste1">';
             echo '<p data-id="'.$value['id'].'" class="cacher_id">Id message' . $value['id'] . '</p>';
             echo '<p class="pseudo">Pseudo : ' . $value['user'] . '</p>';
-            echo '<p class="message">' . $value['message'] . '</p>';
+            echo '<p class="message">' . $message . '</p>';
             echo '</div>';
             echo '<br/>';
         }
@@ -29,7 +32,7 @@ if(isset($_GET['id_message'])){
             echo '<div class="poste">';
             echo '<p data-id="'.$value['id'].'" class="cacher_id">Id message' . $value['id'] . '</p>';
             echo '<p class="pseudo">Pseudo : ' . $value['user'] . '</p>';
-            echo '<p class="message">' . $value['message'] . '</p>';
+            echo '<p class="message">' . $message . '</p>';
             echo '</div>';
         }
     } 
