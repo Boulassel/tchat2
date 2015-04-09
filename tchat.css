@@ -151,3 +151,9 @@ footer{
     height: 15px;
     margin-bottom: 10px;
 }
+
+.date 
+{
+    float:right;
+    font-size: 75%;
+}
