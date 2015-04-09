@@ -5,7 +5,7 @@ function emoT($msg)//emoticons
     $tab_emo = [
         "oO", ";)","-_-", 
     ];
-    $chemin = "/image/";
+    $chemin = "image/";
           
      $tab_lien = [
        "confused.jpg", "wink.ico", "bored.png", 
@@ -23,7 +23,7 @@ function emoT($msg)//emoticons
             {        
                 $tab_message[$i]="";   
 
-                $ch = "<img src=".$chemin.$tab_lien[$y]." alt= ".$tab_lien[$y]."/>";
+                $ch = "<img src=".$chemin.$tab_lien[$y]." alt= ".$tab_lien[$y]." class='smiley' />";
                 $tab_message[$i].=$ch ;
          
             }

@@ -139,3 +139,8 @@ textarea
     color: gray;
 }
 
+.smiley
+{
+    width: 20px;
+    height: 20px;
+}
