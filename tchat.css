@@ -52,7 +52,11 @@ textarea
     height: 500px;
     border: none; 
     border-radius: 10px 10px 0px 0px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+p{
+    float: left;
 }
 .poste{
     height: 250px;
@@ -143,4 +147,9 @@ textarea
 {
     width: 20px;
     height: 20px;
+}
+
+footer{
+    height: 15px;
+    margin-bottom: 10px;
 }
