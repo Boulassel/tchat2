@@ -33,6 +33,7 @@
                 <textarea id="message" name="message"></textarea>
                 <button id="bouton" type="submit" value="GO" name="envoyer"><i class="fa fa-envelope"></i></button>
             </form>
+            <footer></footer>
         </div>
         <script type="text/javascript" src="tchat.js"></script>
         <script type="text/javascript" src="js/js.js"></script>
