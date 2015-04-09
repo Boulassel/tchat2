@@ -29,27 +29,49 @@ $("#affichage").html(afficher_new_msg);
 
 
 
-
-
-
+// Annuler le php sur le formulaire
+$("#form_message").attr("action", "#");
 function ajouter_message(e){
     e.preventDefault(); // Empêcher le rechargement de la page.
     var pseudo = $("#pseudo").val();
     var message = $("#message").val();
+    //alert(pseudo);
     $.ajax({
         type: 'POST',
         url: "ajouter_message.php",
-        data: {user: pseudo,
+        data: {
+            user: pseudo,
             message: message,
+            envoyer:"envoyer"
             },
         success: function (r){
-            //$("body").html(r);
-            alert("Insertion ok");
+            $("body").html(r);
+            //alert("Insertion ok");
         }
     });
 }
 
+$("#form_message").submit(ajouter_message);
+
+// function ajouter_message(e){
+//     e.preventDefault(); // Empêcher le rechargement de la page.
+//     var pseudo = $("#pseudo").val();
+//     var message = $("#message").val();
+//     $.ajax({
+//         type: 'POST',
+//         url: "ajouter_message.php",
+//         data: {user: pseudo,
+//             message: message,
+//             },
+//         success: function (r){
+//             //$("body").html(r);
+//             alert("Insertion ok");
+//         }
+//     });
+// }
+
 //$("#form_ajout_message").submit(ajouter_message);
+
 
 function scrollaff()
 {   
