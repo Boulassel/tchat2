@@ -59,3 +59,7 @@ function scrollaff()
     });
 }
 scrollaff();
+
+$( ".couleur" ).click(function() {
+  $(".poste1").css( "background-color", $(this).attr("id") );
+});

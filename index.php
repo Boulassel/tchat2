@@ -7,6 +7,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="tchat.css">
         <title></title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -22,9 +23,15 @@
                     echo "value=''";
 
                     }  ?> />
+                    <p style="font-size:130%;"><u>Couleur de mes messages:</u></p>
+                <div id="red" class="couleur"></div>
+                <div id="green" class="couleur"></div>
+                <div id="yellow" class="couleur"></div>
+                <div id="blue" class="couleur"></div>
+
                 <div id="affichage"></div>
                 <textarea id="message" name="message"></textarea>
-                <input id="bouton" type="submit" value="GO" name="envoyer"/>
+                <button id="bouton" type="submit" value="GO" name="envoyer"><i class="fa fa-envelope"></i></button>
             </form>
         </div>
         <script type="text/javascript" src="tchat.js"></script>
