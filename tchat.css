@@ -1,12 +1,12 @@
 body
 {
-    background: #99FF33;
+    background: #CCFF99;
 }
 #container
 {
     width: 960px; 
     margin:0px auto; 
-    background: #CCFF66;
+    background: #EFFFEF;
     border-radius: 10px;  
   
 }
@@ -27,7 +27,7 @@ textarea
     width:15%;
     height:8%;
     margin-top:1%;
-    background: #99FF33;
+    background: #CCFF99;
     margin-left: 1%;
     border-radius: 0px 0px 10px 10px;
 }
@@ -47,7 +47,7 @@ textarea
 #affichage
 {
     margin-left: 20%;
-    background: #99FF33;
+    background: #CCFF99;
     width:60%;
     height: 500px;
     border: none; 
@@ -55,9 +55,7 @@ textarea
     overflow-y: scroll;
     overflow-x: hidden;
 }
-p{
-    float: left;
-}
+
 .poste{
     height: 250px;
     width: 500px;
@@ -86,10 +84,11 @@ p{
 #pseudo{
     display: block;
 }
-.message{
-    width: 600px;
+#message{
     padding: 15px;
-    margin-top: 10px;   
+    margin-top: 10px;
+    margin-left: 282px;
+    width: 55%;   
 }
 .cacher_id{
     display: none;
