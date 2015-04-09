@@ -34,7 +34,7 @@ if(isset($_GET['id_message'])){
             echo '<div class="poste">';
             echo '<p data-id="'.$value['id'].'" class="cacher_id">Id message' . $value['id'] . '</p>';
             echo '<p class="pseudo">Pseudo : ' . $value['user'] . '</p>';
-            echo '<p class="message">' . $message . '</p>';
+            echo '<p class="message">' . $poulet . '</p>';
             echo '</div>';
         }
     } 
