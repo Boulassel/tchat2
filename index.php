@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="tchat.css">
-        <title></title>
+        <title>Un tchat entre amis</title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         
     </head>
