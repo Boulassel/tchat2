@@ -4,7 +4,7 @@ include './includes/function.php';
 include './includes/cryptage.php';
 
 session_start();
-//var_dump($_GET);
+
 
 if(isset($_GET['id_message'])){
 
