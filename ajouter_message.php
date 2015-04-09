@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include './includes/config.php';
 include './includes/function.php';
 
@@ -9,9 +9,6 @@ if (isset($_POST['envoyer'])) {
         'user' => $_REQUEST['user'],
         'message' => $_REQUEST['message'],
     ));
-    $_SESSION['pseudo'] = $_POST['user'];
     header('Location: index.php');
-    die();
-    
 }
 
